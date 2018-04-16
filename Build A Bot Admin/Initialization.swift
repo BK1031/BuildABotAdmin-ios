@@ -8,11 +8,13 @@
 
 import Foundation
 
-var selectedSession = ""
+var selectedSession = "blank"
 var selectedMatch = ""
+var selectedCurrent = false
+var selectedAnnouncement = ""
+
 var currentTeam = ""
 var currentMatch = ""
-var selectedCurrent = false
 
 var ambulance = ""
 var blackBox = false
