@@ -161,7 +161,6 @@
 				4F50A2D620747BB800EA06D0 /* Frameworks */,
 				4F50A2D720747BB800EA06D0 /* Resources */,
 				3E146778A97E30D7CD741627 /* [CP] Embed Pods Frameworks */,
-				A4EA464E4EA82ABB95D9A8BA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -244,21 +243,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Build A Bot Admin/Pods-Build A Bot Admin-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A4EA464E4EA82ABB95D9A8BA /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Build A Bot Admin/Pods-Build A Bot Admin-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DB7A619462806853912C6945 /* [CP] Check Pods Manifest.lock */ = {
@@ -450,10 +434,7 @@
 				DEVELOPMENT_TEAM = EN646ZUBQA;
 				INFOPLIST_FILE = "Build A Bot Admin/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bk1031.Build-A-Bot-Admin";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -470,10 +451,7 @@
 				DEVELOPMENT_TEAM = EN646ZUBQA;
 				INFOPLIST_FILE = "Build A Bot Admin/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bk1031.Build-A-Bot-Admin";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
