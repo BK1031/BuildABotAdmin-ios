@@ -22,6 +22,7 @@
 		4F624000207572FD00EECAAC /* NewMatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F623FFF207572FD00EECAAC /* NewMatchViewController.swift */; };
 		4F62400420757DC700EECAAC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F62400320757DC700EECAAC /* LoginViewController.swift */; };
 		4F6240062075808800EECAAC /* CheckLoggedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6240052075808800EECAAC /* CheckLoggedViewController.swift */; };
+		4F9BC99B20D4437900700690 /* CreateAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9BC99A20D4437900700690 /* CreateAlertViewController.swift */; };
 		4FDC19A3207A8D1800421A42 /* EditMatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDC19A2207A8D1800421A42 /* EditMatchViewController.swift */; };
 		4FE03AE620850DCB0039F503 /* SessionFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE03AE220850DCB0039F503 /* SessionFilterViewController.swift */; };
 		4FE03AE720850DCB0039F503 /* AnnouncementsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE03AE320850DCB0039F503 /* AnnouncementsTableViewCell.swift */; };
@@ -49,6 +50,7 @@
 		4F623FFF207572FD00EECAAC /* NewMatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMatchViewController.swift; sourceTree = "<group>"; };
 		4F62400320757DC700EECAAC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4F6240052075808800EECAAC /* CheckLoggedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckLoggedViewController.swift; sourceTree = "<group>"; };
+		4F9BC99A20D4437900700690 /* CreateAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAlertViewController.swift; sourceTree = "<group>"; };
 		4FDC19A2207A8D1800421A42 /* EditMatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditMatchViewController.swift; sourceTree = "<group>"; };
 		4FE03AE220850DCB0039F503 /* SessionFilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionFilterViewController.swift; sourceTree = "<group>"; };
 		4FE03AE320850DCB0039F503 /* AnnouncementsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnouncementsTableViewCell.swift; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 				4FE03AE320850DCB0039F503 /* AnnouncementsTableViewCell.swift */,
 				4FE03AE420850DCB0039F503 /* FullAnnouncementViewController.swift */,
 				4FE03AE220850DCB0039F503 /* SessionFilterViewController.swift */,
+				4F9BC99A20D4437900700690 /* CreateAlertViewController.swift */,
 				4FE03AE520850DCB0039F503 /* ViewController.swift */,
 			);
 			path = Home;
@@ -270,6 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F9BC99B20D4437900700690 /* CreateAlertViewController.swift in Sources */,
 				4FE03AE720850DCB0039F503 /* AnnouncementsTableViewCell.swift in Sources */,
 				4F623FFE2075644300EECAAC /* MatchBreakdownViewController.swift in Sources */,
 				4F624000207572FD00EECAAC /* NewMatchViewController.swift in Sources */,
@@ -434,7 +438,10 @@
 				DEVELOPMENT_TEAM = EN646ZUBQA;
 				INFOPLIST_FILE = "Build A Bot Admin/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bk1031.Build-A-Bot-Admin";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -451,7 +458,10 @@
 				DEVELOPMENT_TEAM = EN646ZUBQA;
 				INFOPLIST_FILE = "Build A Bot Admin/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bk1031.Build-A-Bot-Admin";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

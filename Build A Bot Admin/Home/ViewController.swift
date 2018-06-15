@@ -20,6 +20,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     var detailList = [String]()
     var idList = [String]()
     
+    @IBOutlet weak var addAlertButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.tableFooterView = UIView()
@@ -29,6 +31,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        addAlertButton.layer.cornerRadius = addAlertButton.frame.height / 2
         ref = Database.database().reference()
         
         databaseHandle = ref?.child("announcements").child(selectedSession).observe(.value, with: { (snapshot) in
@@ -83,6 +86,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     @IBAction func filterButton(_ sender: UIBarButtonItem) {
         performSegue(withIdentifier: "filter", sender: self)
+    }
+    
+    @IBAction func addAlert(_ sender: UIButton) {
+        performSegue(withIdentifier: "createAnnouncement", sender: self)
     }
     
 }
