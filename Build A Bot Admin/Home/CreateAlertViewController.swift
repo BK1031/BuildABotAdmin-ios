@@ -59,7 +59,7 @@ class CreateAlertViewController: UIViewController {
         }
         
         else {
-            let announcementReference = self.ref?.child("announcements").child(selectedSession).childByAutoId()
+            let announcementReference = self.ref?.child("sessions").child(selectedSession).child("announcements").childByAutoId()
             let announcement = ["details": announcementDetailText.text, "title": announcementTitleTextField.text, "id": announcementReference?.key] as [String: AnyObject]
             announcementReference?.updateChildValues(announcement)
             self.dismiss(animated: true, completion: nil)

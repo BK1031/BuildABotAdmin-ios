@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F133B372102F8D700979610 /* SelectedSessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F133B352102F8D700979610 /* SelectedSessionViewController.swift */; };
+		4F133B382102F8D700979610 /* SessionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F133B362102F8D700979610 /* SessionsViewController.swift */; };
+		4F133B3A210311AE00979610 /* NewSessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F133B39210311AE00979610 /* NewSessionViewController.swift */; };
 		4F50A2DD20747BB800EA06D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F50A2DC20747BB800EA06D0 /* AppDelegate.swift */; };
 		4F50A2E220747BB800EA06D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F50A2E020747BB800EA06D0 /* Main.storyboard */; };
 		4F50A2E420747BBA00EA06D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F50A2E320747BBA00EA06D0 /* Assets.xcassets */; };
@@ -33,6 +36,9 @@
 
 /* Begin PBXFileReference section */
 		49CC7A5A1642E1F9DAE6140F /* Pods-Build A Bot Admin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Build A Bot Admin.release.xcconfig"; path = "Pods/Target Support Files/Pods-Build A Bot Admin/Pods-Build A Bot Admin.release.xcconfig"; sourceTree = "<group>"; };
+		4F133B352102F8D700979610 /* SelectedSessionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectedSessionViewController.swift; sourceTree = "<group>"; };
+		4F133B362102F8D700979610 /* SessionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionsViewController.swift; sourceTree = "<group>"; };
+		4F133B39210311AE00979610 /* NewSessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSessionViewController.swift; sourceTree = "<group>"; };
 		4F50A2D920747BB800EA06D0 /* Build A Bot Admin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Build A Bot Admin.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F50A2DC20747BB800EA06D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4F50A2E120747BB800EA06D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -72,6 +78,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4F133B342102F8B400979610 /* Sessions */ = {
+			isa = PBXGroup;
+			children = (
+				4F133B352102F8D700979610 /* SelectedSessionViewController.swift */,
+				4F133B362102F8D700979610 /* SessionsViewController.swift */,
+				4F133B39210311AE00979610 /* NewSessionViewController.swift */,
+			);
+			path = Sessions;
+			sourceTree = "<group>";
+		};
 		4F158C4E207D5A7D00737B8D /* GameDay */ = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +129,7 @@
 				4F62400320757DC700EECAAC /* LoginViewController.swift */,
 				4F6240052075808800EECAAC /* CheckLoggedViewController.swift */,
 				4FE03AEA20850E0A0039F503 /* Home */,
+				4F133B342102F8B400979610 /* Sessions */,
 				4F158C4E207D5A7D00737B8D /* GameDay */,
 				4F50A2E020747BB800EA06D0 /* Main.storyboard */,
 				4F50A2E320747BBA00EA06D0 /* Assets.xcassets */,
@@ -280,15 +297,18 @@
 				4FE03AE620850DCB0039F503 /* SessionFilterViewController.swift in Sources */,
 				4FDC19A3207A8D1800421A42 /* EditMatchViewController.swift in Sources */,
 				4F623FF2207562EC00EECAAC /* Initialization.swift in Sources */,
+				4F133B382102F8D700979610 /* SessionsViewController.swift in Sources */,
 				4F623FF42075633C00EECAAC /* GameDayViewController.swift in Sources */,
 				4FE03AE820850DCB0039F503 /* FullAnnouncementViewController.swift in Sources */,
 				4F6240062075808800EECAAC /* CheckLoggedViewController.swift in Sources */,
 				4F623FFC2075644300EECAAC /* PastMatchesTableViewCell.swift in Sources */,
 				4F623FFD2075644300EECAAC /* CurrentMatchViewController.swift in Sources */,
+				4F133B372102F8D700979610 /* SelectedSessionViewController.swift in Sources */,
 				4F623FFA2075644300EECAAC /* BreakdownViewController.swift in Sources */,
 				4F50A2DD20747BB800EA06D0 /* AppDelegate.swift in Sources */,
 				4F623FFB2075644300EECAAC /* SessionMatchesViewController.swift in Sources */,
 				4FE03AE920850DCB0039F503 /* ViewController.swift in Sources */,
+				4F133B3A210311AE00979610 /* NewSessionViewController.swift in Sources */,
 				4F62400420757DC700EECAAC /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

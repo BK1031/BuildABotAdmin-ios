@@ -34,7 +34,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         addAlertButton.layer.cornerRadius = addAlertButton.frame.height / 2
         ref = Database.database().reference()
         
-        databaseHandle = ref?.child("announcements").child(selectedSession).observe(.value, with: { (snapshot) in
+        databaseHandle = ref?.child("sessions").child(selectedSession).child("announcements").observe(.value, with: { (snapshot) in
             if snapshot.childrenCount > 0 {
                 self.titleList.removeAll()
                 self.detailList.removeAll()

@@ -1,5 +1,5 @@
 //
-//  SessionFilterViewController.swift
+//  SessionsViewController.swift
 //  Build A Bot
 //
 //  Created by Bharat Kathi on 4/12/18.
@@ -9,9 +9,10 @@
 import UIKit
 import Firebase
 
-class SessionFilterViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class SessionsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var newSessionButton: UIButton!
     
     var ref:DatabaseReference?
     var databaseHandle:DatabaseHandle?
@@ -23,6 +24,8 @@ class SessionFilterViewController: UIViewController, UITableViewDelegate, UITabl
         tableView.tableFooterView = UIView()
         tableView.delegate = self
         tableView.dataSource = self
+        
+        newSessionButton.layer.cornerRadius = newSessionButton.frame.height / 2
         
         ref = Database.database().reference()
         
@@ -58,11 +61,11 @@ class SessionFilterViewController: UIViewController, UITableViewDelegate, UITabl
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         selectedSession = sessionList[indexPath.row]
-        dismiss(animated: true, completion: nil)
+        performSegue(withIdentifier: "sessionStuff", sender: self)
     }
     
-    @IBAction func cancelButton(_ sender: UIBarButtonItem) {
-        dismiss(animated: true, completion: nil)
+    @IBAction func newSession(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "newSession", sender: self)
     }
     
 }
