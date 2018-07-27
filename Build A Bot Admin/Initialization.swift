@@ -8,6 +8,11 @@
 
 import Foundation
 
+var userID = ""
+var name = ""
+var email = ""
+var access = ""
+
 var selectedSession = "blank"
 var selectedMatch = ""
 var selectedCurrent = false

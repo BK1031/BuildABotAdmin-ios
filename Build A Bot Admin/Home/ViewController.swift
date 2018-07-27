@@ -89,7 +89,15 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     @IBAction func addAlert(_ sender: UIButton) {
-        performSegue(withIdentifier: "createAnnouncement", sender: self)
+        if access != "admin" {
+            let alert = UIAlertController(title: "Admin Required", message: "You need to have administrator access to create a new announcement", preferredStyle: .alert)
+            let action = UIAlertAction(title: "Got it", style: .default, handler: nil)
+            alert.addAction(action)
+            present(alert, animated: true, completion: nil)
+        }
+        else {
+            performSegue(withIdentifier: "createAnnouncement", sender: self)
+        }
     }
     
 }

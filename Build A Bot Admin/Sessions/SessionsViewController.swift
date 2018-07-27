@@ -65,7 +65,15 @@ class SessionsViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
     @IBAction func newSession(_ sender: UIButton) {
-        self.performSegue(withIdentifier: "newSession", sender: self)
+        if access != "admin" {
+            let alert = UIAlertController(title: "Admin Required", message: "You need to have administrator access to create a new session", preferredStyle: .alert)
+            let action = UIAlertAction(title: "Got it", style: .default, handler: nil)
+            alert.addAction(action)
+            present(alert, animated: true, completion: nil)
+        }
+        else {
+            self.performSegue(withIdentifier: "newSession", sender: self)
+        }
     }
     
 }

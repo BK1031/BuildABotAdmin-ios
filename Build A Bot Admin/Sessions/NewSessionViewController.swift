@@ -40,6 +40,10 @@ class NewSessionViewController: UIViewController {
         let codeRef = self.ref?.child("volunteerCodes")
         codeRef?.updateChildValues(code)
         self.dismiss(animated: true, completion: nil)
+        
+        let gamedaySession = ["sessionName": sessionNameTextField.text!]
+        let gamedayRef = ref?.child("gameDay").child(sessionNameTextField.text!)
+        gamedayRef?.updateChildValues(gamedaySession)
     }
     
 }
